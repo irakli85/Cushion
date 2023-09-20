@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cushion</title>
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+
+    <header>
+        <p>
+            <img src="./assets/za.svg" alt="za">
+             SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA
+             <img src="./assets/za.svg" alt="za"> 
+        </p>
+    </header>
+
+    <main>
+        <img src="./assets/logo.png" alt="logo">
+    </main>
+
+    <section>
+        <div class="offer-container">           
+            <div class="offer">
+                <p>Limited offer</p>
+                <div id="timer">05:00:00</div>
+            </div>
+            <div class="price">
+                <p class="price-old">R 250.00</p>
+                <p class="price-new">R 160.00</p>
+            </div>
+        </div>
+        <div class="offer-info">
+            <p class="offer-info-rate">Excellent 4.8/5</p>
+            <div>
+                <img src="./assets/trust.png" alt="trust">
+            </div>
+            <p class="offer-info-descr">best selling</p>
+        </div>  
+    </section>
+
+    <section class="seling-item">
+        <h2>Orthopedic Slippers</h2>
+        
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src='./assets/black.png' alt="black" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src='./assets/orange.png' alt="orange" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/pink.png" alt="pink" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/yellow.png" alt="yellow" />
+                    </div>
+                    
+                </div>                     
+            </div>
+
+          <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src='./assets/black.png' alt="black" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src='./assets/orange.png' alt="orange" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/pink.png" alt="pink" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/yellow.png" alt="yellow" />
+                    </div>                
+                </div>
+            </div>
+            <div>
+                <div class="delivery-info">
+                    <span class="delivery-speed">Fast Delivery:</span>
+                    <span class="delivery-time"> 2-4 days from SA</span>
+                    <img src="./assets/za.svg" alt="za">
+                </div>
+                <div class="stock-info">
+                    <span class="stock-status">In Stock:</span>
+                    <span class="stock-track">Shipping from Johannesburg</span>
+                    <img src="./assets/za.svg" alt="za">
+                </div>
+            </div>
+        </div>
+
+        <div class="stars">
+            <div>
+                <img src="./assets/stars.svg" alt="star">
+                <img src="./assets/stars.svg" alt="star">
+                <img src="./assets/stars.svg" alt="star">
+                <img src="./assets/stars.svg" alt="star">
+                <img src="./assets/stars.svg" alt="star">
+            </div>
+            <span>(10)</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-select">
+
+            <div class="item-color">
+                <label for="color">color</label>
+                <select name="color" id="color">
+                    <option value="black">black</option>
+                    <option value="black">orange</option>
+                    <option value="black">pink</option>
+                    <option value="black">yellow</option>
+                </select>
+            </div>
+
+            <div class="item-size">
+                <label for="size">size</label>
+                <select name="size" id="size">
+                    <option value="black">2</option>
+                    <option value="black">3</option>
+                    <option value="black">4</option>
+                    <option value="black">5</option>
+                </select>
+            </div>
+
+        </div>  
+
+        <a class="footer-btn" href="https://www.youtube.com/" target="_blank">buy now</a>
+    </footer>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+    </script>
+    
+</body>
+</html>
