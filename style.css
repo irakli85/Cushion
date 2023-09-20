@@ -307,6 +307,7 @@ footer{
     appearance: none;
     background-position-x: 95%;
     background-position-y: 2rem;
+    background-color: white;
 }
 
 .item-size option,
