@@ -101,8 +101,8 @@ main img{
 
 .price{
     display: flex;
-    width: 116px;
-    height: 58px;
+    width: 11.6rem;
+    height: 5.8rem;
     padding: 6.488px 7.019px 5.677px 7.019px;
     flex-direction: column;
     justify-content: center;
