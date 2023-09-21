@@ -361,5 +361,11 @@ footer{
     line-height: normal;
 }
 
+@media only screen and (max-width: 390px) {
+  .wrapper{
+    max-width: 100%;
+  }
+}
+
 
 
